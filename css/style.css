@@ -217,9 +217,7 @@
     }
     
     #intro .slide-btns button {
-        /*   color: #000000; */
-        /*    font-size: 43px;
-        padding: 27px; */
+        background-color: transparent;
         opacity: 1;
     }
     
@@ -493,6 +491,9 @@
     /* mobile breakpoint start     */
     
     @media screen and (max-width: 767px) {
+        section {
+            margin-bottom: 50px;
+        }
         .container {
             max-width: 720px;
         }
@@ -515,6 +516,7 @@
             max-height: 0;
             overflow: hidden;
             transition: .3s;
+            z-index: 1;
         }
         .site-navbar ul li {
             /* width: 100%; */
