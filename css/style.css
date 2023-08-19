@@ -332,12 +332,13 @@
     }
     
     #projects .project-imgs {
-        grid-template-columns: auto auto auto;
+        /* grid-template-columns: auto auto auto; */
         background: linear-gradient(#DCC1AB);
     }
     
-    #projects .project-imgs .project-img {
+    #projects .project-imgs img {
         object-fit: cover;
+        width: 100%;
     }
     
     #projects .project-heading {
@@ -494,9 +495,10 @@
         section {
             margin-bottom: 50px;
         }
+        /* 
         .container {
             max-width: 720px;
-        }
+        } */
         /* navbar css for mobile start */
         .nav-toggler {
             display: block;
@@ -526,6 +528,7 @@
         .site-navbar ul li a {
             padding: 25px;
             font-size: 17px;
+            background-image: linear-gradient(to right, #DCC1AB, #DCC1AB 30%, #FFFFFF 50%) !important;
         }
         .site-navbar ul.open {
             max-height: 100vh;
