@@ -27,17 +27,9 @@ function navLinkClick() {
     }
 }
 
-const intSearch = document.querySelector('#inpt_search');
-const navSearch = document.querySelector('.search');
 
-// intSearch.addEventListener('focus', function() {
-//     navSearch.classList.add('active');
-// });
 
-// intSearch.addEventListener('blur', function() {
-//     if (navSearch.val().length == 0)
-//         navSearch.classList.remove('active');
-// });
+/* Projects */
 
 const loadMoreBtn = document.querySelector("#loadMoreBtn");
 let projectImgs = document.querySelector(".project-imgs");
@@ -56,12 +48,11 @@ const projectImgArr = [
     "images/Photo 11.png",
 ]
 
+/* loadMore btn click */
 loadMoreBtn.addEventListener("click", function() {
-
-
     projectImgArr.forEach(img => {
         let data = `
-        <figure>
+        <figure data-aos="zoom-in">
             <img src="${img}" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" />
         </figure>
         `
@@ -70,6 +61,7 @@ loadMoreBtn.addEventListener("click", function() {
 
 })
 
+/* pop-up */
 const modalImg = document.querySelector(".modal-body img");
 
 imgs.forEach(img => {
